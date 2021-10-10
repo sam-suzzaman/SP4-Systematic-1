@@ -1,0 +1,756 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* mainwrapper of page style */
+#mainwrapper{
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: #ffffff;
+}
+
+
+/* ******************************************************
+    COMMON CSS CLASS FOR ALL WRAPPER DIVS
+****************************************************** */
+
+/* FOR 1000PX WIDTH */
+.fullwidth{
+    width: 100%;
+}
+
+/* FOR 960PX WIDTH */
+.fixedwidth{
+    width: 960px;
+    margin: 0 auto;
+}
+
+
+
+
+
+
+
+/* ******************************************************
+                TOP MENU STYLES START
+****************************************************** */
+
+
+/* top headerwrapper section */
+#mainwrapper .headerwrapper{
+    width: 100%;
+    background-color: #ba2e1f;
+    height: 50px;
+}
+
+/* for setting the width of header to 960px DIV */
+.headerwrapper .subwrapheader{
+    width: 960px;
+    margin: 0 auto;
+}
+
+/* TOP MENU LEFT PART STYLE OF LIST WRAPPER */
+.headerwrapper .subwrapheader .topmenu{
+    width: 70%;
+    display: inline-block;
+    text-align: left;
+    padding-top: 15px;
+    float: left;
+}
+/* TOP MENU LEFT PART STYLE OF LINKS */
+.headerwrapper .subwrapheader .topmenu a{
+    text-decoration: none;
+    font-family: Georgia;
+    font-size: 14px;
+    color: #fff;
+    text-transform: capitalize;
+    border-right: 1px solid #fff;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+.headerwrapper .subwrapheader .topmenu a:hover{
+    color: #ddd;
+}
+
+.headerwrapper .subwrapheader .topmenu a:first-child{
+    padding-left: 0;
+}
+
+.headerwrapper .subwrapheader .topmenu a:last-child{
+    border-right: none;
+    padding-right: 0;
+}
+
+
+/* TOP MENU RIGHT PART MAIN WRAPPER STYLE  */
+.headerwrapper .subwrapheader .right{
+    width: 30%;
+    display: inline-block;
+    float: right;
+    padding-top: 7px;
+}
+
+/* TOP MENU RIGHT PARTS FORM SECTION */
+.right form{
+    background-color: #fff;
+    border-radius: 25px;
+    max-width: 210px;
+    width: 96%;
+    padding: 2%;
+    float: right;
+}
+
+.right form .search{
+    border: none;
+    width: 84%;
+    padding: 1%;
+    float: left;
+    color: #000;
+    outline: none;
+}
+
+.right form .submit{
+    border: none;
+    padding: 1%;
+    width: 9%;
+    background: url(images/search.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    cursor: pointer;
+    outline: none;
+}
+
+/* ******************************************************
+                TOP MENU STYLES END
+****************************************************** */
+
+
+
+
+
+
+
+/* ******************************************************
+      LOGO AND SOCIAL LINK SECTION STYLES START
+****************************************************** */
+.logopartwrapper{
+   max-height: 130px;
+   height: 100%;
+}
+
+/* LEFTPARS STYLES */
+.logopartwrapper .left{
+    max-width: 240px;
+    width: 100%;
+    float: left;
+    margin: 40px 0;
+}
+
+/* RIGHT PART STYLES */
+.logopartwrapper .right{
+   float: right;
+   margin-top: 60px;
+}
+
+/* RIGHT PART LINKS STYLES */
+.logopartwrapper .right a{
+   text-decoration: none;
+   padding: 0 5px;
+}
+
+/* RIGHT PART ICONS STYLES */
+.logopartwrapper .right a i{
+    background-color: #333333;
+    border-radius: 50%;
+    width: 35px;
+    height: 25px;
+    color: #fff;
+    text-align: center;
+    padding-top: 10px;
+ }
+
+ .logopartwrapper .right a:hover i{
+    background-color: hsl(290, 96%, 53%);
+    
+ }
+
+ /* ADDING INDIVIDUAL HOVER BACKGROUND COLOR */
+ .logopartwrapper .right a:hover i.fa-linkedin{
+    background-color: #0678B6;
+    
+ }
+ 
+ .logopartwrapper .right a:hover i.fa-twitter-square{
+    background-color: #37B1E2;
+    
+ }
+ 
+ .logopartwrapper .right a:hover i.fa-pinterest{
+    background-color:#E83F3A;
+    
+ }
+ 
+ .logopartwrapper .right a:hover i.fa-google-plus-g{
+    background-color: #E83F3A;
+    
+ }
+ 
+ .logopartwrapper .right a:hover i.fa-rss{
+    background-color: #EE802F;
+    
+ }
+ 
+ /* ******************************************************
+      LOGO AND SOCIAL LINK SECTION STYLES END
+****************************************************** */
+
+
+
+
+
+ /* **********************************************
+             MAIN MENU BAR SECTION STYLES START
+        **********************************************  */
+
+/* TO GIVE STYLE MAIN MENU */
+.menu{
+    background-color: #333333;
+    clear: both; /*MENU JENO OPORE UTHE NA JAI */
+    height: 40px;
+    box-sizing: border-box;
+    text-align: center;  /*LI KE MAJHE RAKHAR JONNO */
+    list-style-type: none;
+}
+
+.menu li{
+     display: inline-block; /*LI KE PASAPASI RAKHAR JONNO */
+     padding: 12px 10px;
+     position: relative; /*MDROPDOWN MENU ER JONNO */
+}
+
+.menu li a{
+    text-decoration: none;
+    color: #fff;
+    font-family: Georgia;
+    font-size: 14px;
+    text-transform: uppercase;
+    transition: .3s; /*COLOR CHANGE SLOWLY KORAR JONNO */
+}
+
+.menu li:hover a{
+    color: #ba2e1f;
+}
+
+
+/* ..............................................................
+               DROPDOWN MENU 1 STYLES
+.................................................................*/
+
+.menu .dropdown1{
+    background-color: #f75114;
+    position: absolute;
+    left: -99999px;
+    text-align: left;
+    margin-top: 10px;
+    transition: .1s;
+}
+
+/*DROPDOWN KE AGER POSITION E NIYE ASTE */
+.menu li:hover .dropdown1{
+    left: 0;
+}
+.menu .dropdown1 li{
+    display: block;
+    padding: 10px 5px;
+    width: 150px;
+    border-bottom: 1px solid #fff;
+    position: relative;
+}
+
+.menu  .dropdown1 li a{
+    color: #fff;
+    transition: .3s;
+    
+}
+
+.menu .dropdown1 li:hover a{
+    color:#000; 
+}
+
+.menu .dropdown1 li:last-child{
+    border-bottom: none;
+}
+
+/* ..............................................................
+               DROPDOWN MENU 2 STYLES
+.................................................................*/
+
+.menu .dropdown1 .dropdown2{
+    position: absolute;
+    top: -9999px;
+    left: 160px;
+    background-color: #0d8b13;
+}
+
+.menu .dropdown1 li:hover .dropdown2{
+    top: 0; 
+}
+
+.menu .dropdown1 .dropdown2 li a{
+    color: #fff;
+}
+.menu .dropdown1 .dropdown2 li:hover a{
+    color: red;
+}
+
+
+/* **********************************************
+             MAIN MENU BAR SECTION STYLES END
+**********************************************  */
+
+
+/* **********************************************
+             HERO AREA OR SECTION STYLES START
+**********************************************  */
+
+.herowrapper{
+    margin-top: 25px;
+    height: 440px;
+}
+
+/* LEFT SIDE IMAGE STYLE */
+.leftimg {
+  width: 400px;
+  float: left;
+  margin-right: 45px;
+  max-height: 440px;
+  height: 100%;
+}
+
+/* LEFT SIDE IMAGE STYLE */
+.righttext{
+    width: 515px;
+    float: left; /*NA DILE LEFT E ALIGN HBE NA */
+}
+
+.righttext>h2{
+    font-size: 86px;
+    font-family: Georgia;
+    color: #000;
+    font-weight: normal; /* heading ke psd file er moto dekhate dui line e */
+    padding-top: 85px;
+    padding-bottom: 15px;
+    line-height: 1em;
+}
+
+.righttext>p{
+    font-size: 16px;
+    font-family: Georgia;
+    color: #666666;
+    line-height: 1.3em;
+    font-weight: normal;
+    
+}
+
+.righttext>a{
+    float: right;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-family: Georgia;
+    font-weight: normal;
+    color: #ba2e1f;
+    text-decoration: none;
+    padding-top: 20px;
+}
+
+/* **********************************************
+             HERO AREA OR SECTION STYLES END
+**********************************************  */
+
+
+
+
+/* **********************************************
+             WORK SECTION STYLES START
+**********************************************  */
+
+/* MAIN WRAPPER OF WORK AREA SECTION OF WIDTH 1000PX */
+.workwrapper{
+    background-color: #f2f2f2;
+    overflow: hidden; /*FLOAT LEFT USE KORAR KARONE BACKGROUD COLOR BACK ANAR JOONO OVERFLOW USE KORTE HOBE */
+    padding-bottom: 50px;
+}
+
+/* FOR CREATING THREE COLUMN  */
+/* extra class for width all div */
+.column{
+    width: 31.25%;
+    float: left; /*THREE COLUMN KE PASA PASI NIYE ASAR JONNO */
+}
+
+/* WORK AREA KE 960PX WIDTH SET KORAR JONNO AND TO SET MARGIN-TOP */
+.workwrapper .subwrapper{
+    margin-top: 50px;
+}
+
+/* EREVRY H3 KE STYLE DEBAR JONNO */
+.subwrapper h3{
+    margin-bottom: 50px;
+    font-size: 26px;
+    font-family: Georgia;
+    font-weight: normal;
+    color: #333333;
+}
+
+
+/* LEFT PART ER IMAGE ER CSS */
+.subwrapper .leftside img{
+    width: 290px;
+    height:140px;
+    padding-bottom:40px;
+}
+
+
+/* LEFT SIDE ER PARAGRAPH ER STYLE */
+.subwrapper .leftside p{
+    color: #878787;
+    font-family: Georgia;
+    font-size: 14px;
+    text-align: justify;
+    padding-bottom: 25px;
+}
+
+.subwrapper .leftside p:last-child{
+    padding-bottom: 0;
+}
+
+/* LEFT SIDE ER LINK ER STYLE */
+.subwrapper .leftside a{
+    padding-top: 20px;
+    float: right;
+    color: #b92d1f;
+    text-decoration: none;
+}
+
+/* STYLE OF CENTER PART OF WORK AREA START */
+.center{
+    padding: 0 3.125%;
+}
+
+/* EVERY SECTION KE STYLE DEBAR JONNO */
+.center .sub{
+    padding-bottom: 30px;
+}
+
+.center .sub .img{
+width: 64px;
+height: 64px;
+float: left;
+padding-right: 17px;
+}
+
+
+.center .sub .text h4{
+    font-family: Georgia;
+    font-size: 14px;
+    color: #878787;
+    padding-bottom: 10px;
+    
+}
+
+.center .sub .text p{
+    font-family: Georgia;
+    font-size: 13px;
+    color: #878787;
+    line-height: 1.5em;
+    text-align: justify;
+}
+
+.center a{
+    float: right;
+    color: #b92d1f;
+    text-decoration: none;
+}
+
+
+/* STYLE OF RIGHT PART OF WORK AREA START */
+
+.rightside .img{
+padding-bottom: 10px;
+clear: both; /*LINK JENO VITORE CHOLE NA ASE TAR JONNO */
+}
+.rightside .img img{
+    width: 70px;
+    height: 60px;
+    float: left;
+    padding-right: 10px;
+}
+
+.rightside .img h4{
+    font-family: Georgia;
+    font-size: 16px;
+    font-weight: normal;
+    color: #989898;
+    padding: 21px 0;
+}
+
+.rightside p{
+    font-family: Georgia;
+    font-size: 14px;
+    font-weight: normal;
+    color: #888888;
+    text-align: justify;
+    line-height: 1.3em;
+}
+
+.rightside a{
+    font-family: Georgia;
+    font-size: 14px;
+    font-weight: normal;
+    color: #b92d1f;
+    text-decoration: none;
+    float: right;
+    padding-top: 15px;
+}
+
+/* **********************************************
+             WORK SECTION STYLES END
+**********************************************  */
+
+
+
+
+/* **********************************************
+             FOUR COLUMN SECTION STYLES START
+**********************************************  */
+
+/* dealut column class for each column */
+.column2{
+    width: 21.78%;
+    margin-right: 4.17%; /* setting margin-right class */
+    float: left;
+}
+
+/* removing margin-right last column */
+.col-4{
+    margin-right: 0;
+}
+
+/* to give margin top all element of this div */
+.subcls{
+    margin-top: 30px;
+}
+
+/* to give all hr style */
+.subcls hr{
+    width: 1px solid #666666;
+    margin-bottom: 20px;
+}
+
+/* to give style all h2 */
+
+.subcls h3{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 16px;
+    font-weight: normal;
+    color: #666666;
+    margin-bottom: 30px;
+}
+
+/* to give style all span */
+.subcls span{
+    color: #b82c1f;
+}
+
+
+/* #################################################################
+                    first column style start
+################################################################# */
+
+
+/* to give style paragraph */
+
+.col-1>p{
+    font-family: Georgia;
+    font-size: 14px;
+    font-weight: normal;
+    color: #666666;
+    line-height: 1.3em;
+    margin-bottom: 20px;
+}
+
+.col-1>p>.btm{
+    font-family: Georgia;
+    font-size: 14px;
+    font-weight: normal;
+    color: #666666;
+}
+
+
+.col-1>p:last-child{
+    margin-bottom: 0;
+}
+
+.col-1>p>span{
+    padding-right: 5px;
+}
+
+
+
+/* #################################################################
+                    second column style start
+################################################################# */
+
+.col-2 .list{
+    list-style-type: ">>";
+}
+.col-2 .list li{
+    font-family: Georgia;
+    font-size: 14px;
+    color: #666666;
+    border-bottom: 1px solid #d4d4d4;
+    padding: 10px;
+}
+
+
+/* #################################################################
+                    third column style start
+################################################################# */
+
+.col-3 .innercontent h4{
+font-family: Georgia;
+font-size: 14px;
+color: #666666;
+clear: both;
+}
+
+.col-3 .innercontent>p{
+    font-family: Georgia;
+    font-size: 10px;
+    color: #666666;
+}
+
+.col-3 .innercontent .subpara{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-family: Georgia;
+    font-size: 12px;
+    color: #666666;
+}
+
+.col-3 .innercontent a{
+    float: right;
+    color: #b82c1f;
+    font-family: Georgia;
+    font-size: 12px;
+    text-decoration: none;
+    margin-bottom: 20px;
+}
+
+.col-3 .innercontent .mbr{
+    margin-bottom: 0;
+}
+
+
+/* #################################################################
+                    fourth column style start
+################################################################# */
+.col-4 input[type="text"]{
+    text-transform: capitalize;
+    color: #989898;
+    font-family: Georgia;
+    font-size: 13px;
+    padding: 10px 15px;
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    background-color: #f2f2f2;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.col-4 input[type="email"]{
+    text-transform: capitalize;
+    color: #989898;
+    font-family: Georgia;
+    font-size: 13px;
+    padding: 10px 15px;
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    background-color: #f2f2f2;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.col-4 textarea{
+    text-transform: capitalize;
+    color: #989898;
+    font-family: Georgia;
+    font-size: 13px;
+    padding: 10px 15px;
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    background-color: #f2f2f2;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.col-4 button{
+    padding:10px 15px;
+    background-color: #f2f2f2;
+    font-family: Georgia;
+    font-size: 13px;
+    color: #ba2e1f;
+    border: none;
+    outline: none;
+    text-transform: uppercase;
+    border-radius: 5px;
+    transition: .4s;
+    cursor: pointer;
+}
+.col-4 button:hover{
+    background-color: #fc4108;
+    color: #fff;
+}
+
+/* to add margin bottom of total div */
+.subcls{
+    margin-bottom: 30px;
+    overflow: hidden; /*beacuse we use float:left property */
+}
+
+
+
+
+
+/* **********************************************
+             FOOTER SECTION STYLES START
+**********************************************  */
+
+.bgclass{
+    background-color: #f2f2f2;
+    overflow: hidden;
+}
+
+.bgclass .fixedwidth p{
+    color: #919191;
+    font-family: Georgia;
+    font-size: 14px;
+    padding: 30px 0;
+    float: left;
+}
+
+.bgclass .fixedwidth p.rgt{
+    float: right;
+    color: #919191;
+    font-family: Georgia;
+    font-size: 14px;
+    padding: 30px 0;
+}
